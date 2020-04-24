@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is an example of a meta description. This will often show up in search results.">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+<style>
+    #Text {
+        position: fixed;
+        top:50%;
+        left:10%;
+    }
+    #container
+    {
+        position: fixed;
+        left:58%;
+        top:14%;
+    }
+</style>
+<marquee>Welcome to my Website Enjoy!</marquee>
+
+</head>
+<center>
+<p id="demo"></p>
+
+<script>  
+var d = new Date();
+d.setFullYear(2020);
+document.getElementById("demo").innerHTML = d;
+</script>
+<body style = "background: url(https://cdn.wallpapersafari.com/77/83/sfO24Q.jpg)no-repeat center center fixed; background-size: 100% 100%;"></body>
+ <div id="container">  
+<button id="Button1" onclick="myFunction()">Try it</button>
+</div>
+<div id="Text">
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  var person = prompt("Please enter your name:", "");
+  if (person == null || person == "") {
+    txt = "User cancelled the prompt.";
+  } else {
+    txt = "Hello " + person + "! How are you today?";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+</div>
+    
+<body Text="White", bgcolor="Gray">
+    
+    
+    <form>
+    Value 1: <input type="text" id="value1">
+    Value 2: <input type="text" id="value2">
+    Operation:
+    <select id="operator">
+     <option value="add">Add</option>
+     <option value="min">Minus</option>
+     <option value="div">Divide</option>
+     <option value="mul">Multiply</option>
+    </select><br>
+    <button type="button" onclick="calc()">Calculate</button>
+  </form>
+    
+   <div id="result"></div>
+
+  </body>
+    </center>
+  <script src="main.js"></script>
+</html>
